@@ -6,6 +6,29 @@ title: Cowosedlice.cz
 email: radek@cowosedlice.cz
 description: "Coworkingová kancelář Novosedlice / Teplice."
 
+# About section
+history-heading: O nás
+history-subheading: Lorem ipsum dolor sit amet consectetur.
+history:
+- date: 2013
+  title: Řempo!
+  pic: 1
+  descr: Lorem ipsum dolor sit amet, consectetur ad
+
+- date: 2014
+  title: Muhehe
+  pic: 2
+  descr: Lorem ipsum dolor sit amet, consectetur ad
+
+- date: 2015
+  title: Muhehe
+  pic: 3
+  descr: Lorem ipsum dolor sit amet, consectetur ad
+
+- date: 2016
+  title: Muhehe
+  pic: 4
+  descr: Lorem ipsum dolor sit amet, consectetur ad
 
 # Team names, titles and social links
 people:
