@@ -34,6 +34,8 @@ history-cta2: přijď.
 history-cta3: Přidej se!,
 
 # Team names, titles and social links
+people-heading: Zajímaví lidé
+people-subheading: Rádi navzájem konzultujeme nápady, radíme se a pomáháme si.
 people:
 - name: Radek Novák
   pic: 1
@@ -68,6 +70,7 @@ people:
   social:
     - title: code-fork
       url: https://github.com/jirismid
+people-footer: Klidně se připoj na náš Slack a na něco se nás zeptej.<br>Rádi třeba s něčím poradíme.
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
