@@ -15,7 +15,7 @@ people:
   social:
     - title: gamepad
       url: http://www.webgames.cz/kontakt/
-    - title: fork
+    - title: code-fork
       url: https://github.com/radektp
 
 - name: Radim Klaška
@@ -26,21 +26,21 @@ people:
       url: https://twitter.com/radimklaska
     - title: tint
       url: https://www.drupal.org/u/radimklaska
-    - title: fork
+    - title: code-fork
       url: https://github.com/radimklaska
 
 - name: Honza Páza
   pic: 3
   position: Lead Developer
   social:
-    - title: fork
+    - title: code-fork
       url: https://github.com/honzapara
 
 - name: Jiří Šmíd
   pic: 4
   position: Lead Developer
   social:
-    - title: fork
+    - title: code-fork
       url: https://github.com/jirismid
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
