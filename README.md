@@ -2,6 +2,7 @@ Agency Jekyll theme
 ====================
 
 Agency theme based on [Agency bootstrap theme ](http://startbootstrap.com/templates/agency/)
+(We didn't forked it because pull request forms are pretty messy on forks.)
 
 # How to use
 
