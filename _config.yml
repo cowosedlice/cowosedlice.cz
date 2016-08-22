@@ -1,5 +1,5 @@
 url: https://cowosedlice.cz
-baseurl: 
+baseurl:
 
 # Site settings
 title: Cowosedlice.cz
@@ -9,38 +9,39 @@ description: "Coworkingová kancelář Novosedlice / Teplice."
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Radek Novák
   pic: 1
   position: Lead Designer
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+    - title: gamepad
+      url: http://www.webgames.cz/kontakt/
+    - title: fork
+      url: https://github.com/radektp
 
-- name: Larry Parker
+- name: Radim Klaška
   pic: 2
-  position: Lead Marketer
+  position: Drupal developer @ Morpht Pty. Ltd. & Drupal.cz
   social:
     - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+      url: https://twitter.com/radimklaska
+    - title: tint
+      url: https://www.drupal.org/u/radimklaska
+    - title: fork
+      url: https://github.com/radimklaska
 
-- name: Diana Petersen
+- name: Honza Páza
   pic: 3
   position: Lead Developer
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+    - title: fork
+      url: https://github.com/honzapara
+
+- name: Jiří Šmíd
+  pic: 4
+  position: Lead Developer
+  social:
+    - title: fork
+      url: https://github.com/jirismid
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
