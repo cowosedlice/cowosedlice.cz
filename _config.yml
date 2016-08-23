@@ -80,16 +80,14 @@ people-footer: Klidně se připoj na náš Slack a na něco se nás zeptej.<br>R
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: link
+    url: http://www.cowosedlice.cz/
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: http://www.cowosedlice.cz/
   - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: http://www.cowosedlice.cz/
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/cowosedlice
 
 # Postal address (add as many lines as necessary)
 address:
