@@ -10,25 +10,35 @@ description: "Coworkingová kancelář Novosedlice / Teplice."
 history-heading: O nás
 history-subheading: Lorem ipsum dolor sit amet consectetur.
 history:
-- date: 2013
-  title: Řempo!
-  pic: 1
-  descr: Lorem ipsum dolor sit amet, consectetur ad
+- date: červen 2014
+  title: Řempo
+  pic: rempo_start
+  descr: První kancelář byla malá, rozbitá ale levná.
 
-- date: 2014
-  title: Muhehe
-  pic: 2
-  descr: Lorem ipsum dolor sit amet, consectetur ad
+- date: září 2014
+  title: Fungujeme!
+  pic: rempo_ready
+  descr: Mini kancelář v areálu Řempa si Radek s Radimem pěkně opravili.
 
 - date: 2015
-  title: Muhehe
-  pic: 3
-  descr: Lorem ipsum dolor sit amet, consectetur ad
+  title: Rosteme
+  pic: nb
+  descr: Časem se k nám pridávají Petr, Honza a Jirka a místo přestává stačit.
 
-- date: 2016
-  title: Muhehe
-  pic: 4
-  descr: Lorem ipsum dolor sit amet, consectetur ad
+- date: leden 2016
+  title: Stěhujeme se.
+  pic: stehovani
+  descr: Máme dostatek místa pro nové kolegy a navíc pěkné zázemí.
+
+- date: červen 2016
+  title: Kávovar
+  pic: kavovar
+  descr: Pořízení kavalitního kávovaru bylo zlomovým bodem. Pohodlí a produktivita se mnohonásobně zlepšily.
+
+- date: srpen 2016
+  title: Cowosedlice.cz
+  pic: web
+  descr: Oficiálně se otevíráme veřejnosti.
 history-cta1: Napiš,
 history-cta2: přijď.
 history-cta3: Přidej se!,
