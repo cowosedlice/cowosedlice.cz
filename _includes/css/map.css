@@ -3,9 +3,16 @@
   height: 500px;
 }
 
+section#map {
+  padding: 0 0;
+}
+
 @media (max-width: 768px) {
   .map {
     height: 75%;
+  }
+  section#map {
+    padding: 0 0;
   }
 }
 
