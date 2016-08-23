@@ -37,16 +37,18 @@ history-cta3: Přidej se!,
 people-heading: Zajímaví lidé
 people-subheading: Rádi navzájem konzultujeme nápady, radíme se a pomáháme si.
 people:
-- name: Radek Novák
+- name: Ing. Radek Novák
   pic: 1
-  position: Lead Designer
+  position: Provozovatel coworkingové kanceláře a herního protálu webgames.cz.
   social:
     - title: gamepad
-      url: http://www.webgames.cz/kontakt/
+      url: http://www.webgames.cz/kontakt
+    - title: link
+      url: http://www.radeknovak.cz
     - title: code-fork
       url: https://github.com/radektp
 
-- name: Radim Klaška
+- name: Bc. Radim Klaška
   pic: 2
   position: Drupal developer @ Morpht Pty. Ltd. & Drupal.cz
   social:
@@ -57,17 +59,21 @@ people:
     - title: code-fork
       url: https://github.com/radimklaska
 
-- name: Honza Páza
+- name: Honza Pára
   pic: 3
-  position: Lead Developer
+  position: Drupalista na volné noze, kodér šablon a site builder.
   social:
+    - title: tint
+      url: https://www.drupal.org/u/honzapara
     - title: code-fork
       url: https://github.com/honzapara
 
 - name: Jiří Šmíd
   pic: 4
-  position: Lead Developer
+  position: Tvorba webových stránek, grafiky, html šablon, SEO optimalizace
   social:
+    - title: link
+      url: http://www.jirismid.cz
     - title: code-fork
       url: https://github.com/jirismid
 people-footer: Klidně se připoj na náš Slack a na něco se nás zeptej.<br>Rádi třeba s něčím poradíme.
