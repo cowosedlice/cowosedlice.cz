@@ -49,14 +49,14 @@ people-subheading: Rádi navzájem konzultujeme nápady, radíme se a pomáháme
 people:
 - name: Ing. Radek Novák
   pic: 1
-  position: Provozovatel coworkingové kanceláře a herního protálu webgames.cz.
+  position: Provozovatel herního portálu webgames.cz a lptube.cz
   social:
     - title: gamepad
       url: http://www.webgames.cz/kontakt
     - title: link
-      url: http://www.radeknovak.cz
-    - title: code-fork
-      url: https://github.com/radektp
+      url: http://www.lptube.cz
+    - title: facebook
+      url: https://www.facebook.com/radek.novak.75
 
 - name: Bc. Radim Klaška
   pic: 2
