@@ -1,5 +1,5 @@
 <!-- Price Section -->
-    <section id="services">
+    <section id="price">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -15,7 +15,7 @@
                         <i class="fa fa-{{ price.pic }} fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">{{ price.tariff }}</h4>
-                    <p class="text-muted">{{ price.desc }}</p>
+                    <p class="text-muted"><strong>{{ price.desc-title }}</strong> - {{ price.desc }}</p>
                 </div>
                 {% endfor %}
             </div>
