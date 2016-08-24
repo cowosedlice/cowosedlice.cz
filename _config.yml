@@ -8,27 +8,37 @@ description: "Coworkingová kancelář Novosedlice / Teplice."
 
 # About section
 history-heading: O nás
-history-subheading: Lorem ipsum dolor sit amet consectetur.
+history-subheading: O coworkingové kanceláři v Teplicích jsme přemýšleli pár let. Trvalo to, ale otvíráme.
 history:
-- date: 2013
-  title: Řempo!
-  pic: 1
-  descr: Lorem ipsum dolor sit amet, consectetur ad
+- date: červen 2014
+  title: Řempo
+  pic: rempo_start
+  descr: První kancelář byla malá, rozbitá ale levná.
 
-- date: 2014
-  title: Muhehe
-  pic: 2
-  descr: Lorem ipsum dolor sit amet, consectetur ad
+- date: září 2014
+  title: Fungujeme!
+  pic: rempo_ready
+  descr: Mini kancelář v areálu Řempa si Radek s Radimem pěkně opravili.
 
 - date: 2015
-  title: Muhehe
-  pic: 3
-  descr: Lorem ipsum dolor sit amet, consectetur ad
+  title: Rosteme
+  pic: nb
+  descr: Časem se k nám pridávají Petr, Honza a Jirka a místo přestává stačit.
 
-- date: 2016
-  title: Muhehe
-  pic: 4
-  descr: Lorem ipsum dolor sit amet, consectetur ad
+- date: leden 2016
+  title: Stěhujeme se.
+  pic: stehovani
+  descr: Máme dostatek místa pro nové kolegy a navíc pěkné zázemí.
+
+- date: červen 2016
+  title: Kávovar
+  pic: kavovar
+  descr: Pořízení kavalitního kávovaru bylo zlomovým bodem. Pohodlí a produktivita se mnohonásobně zlepšily.
+
+- date: srpen 2016
+  title: Cowosedlice.cz
+  pic: web
+  descr: Oficiálně se otevíráme veřejnosti.
 history-cta1: Napiš,
 history-cta2: přijď.
 history-cta3: Přidej se!,
@@ -37,16 +47,18 @@ history-cta3: Přidej se!,
 people-heading: Zajímaví lidé
 people-subheading: Rádi navzájem konzultujeme nápady, radíme se a pomáháme si.
 people:
-- name: Radek Novák
+- name: Ing. Radek Novák
   pic: 1
-  position: Lead Designer
+  position: Provozovatel herního portálu webgames.cz a lptube.cz
   social:
     - title: gamepad
-      url: http://www.webgames.cz/kontakt/
-    - title: code-fork
-      url: https://github.com/radektp
+      url: http://www.webgames.cz/kontakt
+    - title: link
+      url: http://www.lptube.cz
+    - title: facebook
+      url: https://www.facebook.com/radek.novak.75
 
-- name: Radim Klaška
+- name: Bc. Radim Klaška
   pic: 2
   position: Drupal developer @ Morpht Pty. Ltd. & Drupal.cz
   social:
@@ -57,33 +69,35 @@ people:
     - title: code-fork
       url: https://github.com/radimklaska
 
-- name: Honza Páza
+- name: Honza Pára
   pic: 3
-  position: Lead Developer
+  position: Drupalista na volné noze, kodér šablon a site builder.
   social:
+    - title: tint
+      url: https://www.drupal.org/u/honzapara
     - title: code-fork
       url: https://github.com/honzapara
 
 - name: Jiří Šmíd
   pic: 4
-  position: Lead Developer
+  position: Tvorba webových stránek, grafiky, html šablon, SEO optimalizace
   social:
+    - title: link
+      url: http://www.jirismid.cz
     - title: code-fork
       url: https://github.com/jirismid
 people-footer: Klidně se připoj na náš Slack a na něco se nás zeptej.<br>Rádi třeba s něčím poradíme.
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: link
+    url: http://www.cowosedlice.cz/
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: http://www.cowosedlice.cz/
   - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: http://www.cowosedlice.cz/
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/cowosedlice
 
 # Postal address (add as many lines as necessary)
 address:
