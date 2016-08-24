@@ -43,6 +43,22 @@ history-cta1: Napiš
 history-cta2: Přijď
 history-cta3: Přidej se!
 
+# Price list
+price-heading: Ceník
+price-subheading: Ať už máte malý nebo velký tarif, vždy budete mít možnost využívat všeho, co se v cowosedlicích nachází.
+price:
+- tariff: Velký tarif - 1750Kč měsíčně
+  pic: circle
+  desc: Přístup 24/7 a možnost zžízení vlastního pracovního místa
+
+- tariff: Střední tarif - 1100Kč měsíčně
+  pic: dot-circle-o
+  desc: Poloviční tarif pokrývá 10 pracovních dní od 8:00 do 17:00
+  
+- tariff: Malý tarif - 150 za každý den
+  pic: circle-o
+  desc: Přístup v pracovní době mezi 8:00 a 17:00
+
 # Team names, titles and social links
 people-heading: Zajímaví lidé
 people-subheading: Rádi navzájem konzultujeme nápady, radíme se a pomáháme si.
