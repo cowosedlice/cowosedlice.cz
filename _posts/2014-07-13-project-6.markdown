@@ -1,6 +1,6 @@
 ---
-title: Cowosedlice
-subtitle: Skoro v celé své kráse
+title: Ajťácký koutek
+subtitle: Stačí zapnout stroje a nepotřebujeme topení :)
 layout: default
 modal-id: 6
 img: 6.jpg
