@@ -111,10 +111,8 @@ people-footer: Klidně se připoj na náš Slack a na něco se nás zeptej.<br>R
 social:
   - title: link
     url: http://www.cowosedlice.cz/
-  - title: twitter
-    url: http://www.cowosedlice.cz/
   - title: facebook
-    url: http://www.cowosedlice.cz/
+    url: https://www.facebook.com/cowosedlice/
   - title: github
     url: https://github.com/cowosedlice
 
