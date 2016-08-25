@@ -1,6 +1,6 @@
 ---
 title: Pohled z přední části
-subtitle: A na fotce je i návštěva z Austrálie, zdravíme @cermakm
+subtitle: Na fotce je i návštěva z Austrálie, zdravíme @cermakm
 layout: default
 modal-id: 3
 img: 3.jpg
