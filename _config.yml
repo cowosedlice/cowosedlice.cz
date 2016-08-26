@@ -19,7 +19,7 @@ history:
 - date: září 2014
   title: Fungujeme!
   pic: rempo_ready
-  descr: Mini kancelář v areálu Řempa si Radek s Radimem pěkně opravili.
+  descr: Mini kancelář v areálu Řempa jsme si opravili a začali fungovat.
 
 - date: 2015
   title: Rosteme
@@ -64,12 +64,12 @@ price:
   desc: Přístup v pracovní době mezi 8:00 a 17:00.
 
 # Team names, titles and social links
-people-heading: Zajímaví lidé
+people-heading: Aktivní členové
 people-subheading: Rádi navzájem konzultujeme nápady, radíme se a pomáháme si.
 people:
 - name: Ing. Radek Novák
   pic: 1
-  position: Provozovatel herního portálu webgames.cz a lptube.cz
+  position: Řeší věci související s webgames.cz - tvorba obsahu, programování (php, nette, javascript, mysql), seo, analytika, prodej reklamy atd.
   social:
     - title: gamepad
       url: http://www.webgames.cz/kontakt
@@ -80,7 +80,7 @@ people:
 
 - name: Bc. Radim Klaška
   pic: 2
-  position: Drupal developer @ Morpht Pty. Ltd. & Drupal.cz
+  position: Drupal vývojář pro australský Morpht Pty. Ltd. a pro český Drupal.cz + fanda do všeho, co má jedničky a nuly.
   social:
     - title: twitter
       url: https://twitter.com/radimklaska
@@ -91,7 +91,7 @@ people:
 
 - name: Honza Pára
   pic: 3
-  position: Drupalista na volné noze, kodér šablon, site builder a barista samouk.
+  position: Drupalista na volné noze, kodér šablon, site builder, barista samouk, motorkář a herec teplického divadle.
   social:
     - title: tint
       url: https://www.drupal.org/u/honzapara
@@ -100,10 +100,12 @@ people:
 
 - name: Jiří Šmíd
   pic: 4
-  position: Tvorba webových stránek, grafiky, html šablon, SEO optimalizace
+  position: Tvorba webových stránek, grafiky, html šablon, SEO optimalizace a certifikovaný Google Street View fotograf zajišťující virtuální prohlídky.
   social:
     - title: link
       url: http://www.jirismid.cz
+    - title: link
+      url: http://www.prohlidka-virtualne.cz/     
     - title: code-fork
       url: https://github.com/jirismid
 people-footer: Klidně se připoj na náš Slack a na něco se nás zeptej.<br>Rádi třeba s něčím poradíme.
