@@ -8,8 +8,8 @@ email: radek@cowosedlice.cz
 description: "Coworkingová kancelář Novosedlice / Teplice."
 
 # About section
-history-heading: O nás
-history-subheading: O coworkingové kanceláři v Teplicích jsme přemýšleli pár let. Trvalo to, ale otvíráme.
+history-heading: Trocha historie
+history-subheading: O coworkingové kanceláři v Teplicích jsme přemýšleli pár let. Ovšem cesta od myšlenky ke skutečné realizaci chvílí trvala :).
 history:
 - date: červen 2014
   title: Řempo
@@ -39,7 +39,7 @@ history:
 - date: srpen 2016
   title: Cowosedlice.cz
   pic: web
-  descr: Oficiálně se otevíráme veřejnosti.
+  descr: Oficiální otevření na nové adrese.
 history-cta1: Napiš
 history-cta2: Přijď
 history-cta3: Přidej se!
