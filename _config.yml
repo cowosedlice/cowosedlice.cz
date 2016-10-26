@@ -65,7 +65,7 @@ price:
 
 # Team names, titles and social links
 people-heading: Aktivní členové
-people-subheading: Rádi navzájem konzultujeme nápady, radíme se a pomáháme si.
+people-subheading: Alfou a omegou každého coworkingu jsou hlavně samotní lidé, finanční úspora v porovnání s vlastní kanceláří je jen příjemnný vedlejší bonus :). 
 people:
 - name: Ing. Radek Novák
   pic: 1
@@ -108,6 +108,16 @@ people:
       url: http://www.prohlidka-virtualne.cz/     
     - title: code-fork
       url: https://github.com/jirismid
+people-footer: Klidně se připoj na náš Slack a na něco se nás zeptej.<br>Rádi třeba s něčím poradíme.
+
+- name: Martin Čapek
+  pic: 5
+  position: Majitel e-shopu s dětskou výživou nutrilonstore.com.
+  social:
+    - title: link
+      url: http://nutrilonstore.com/en/      
+    - title: facebook
+      url: https://www.facebook.com/mcapek
 people-footer: Klidně se připoj na náš Slack a na něco se nás zeptej.<br>Rádi třeba s něčím poradíme.
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
