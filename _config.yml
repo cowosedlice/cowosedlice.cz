@@ -5,36 +5,36 @@ baseurl:
 title: Cowosedlice.cz - sdílená kancelář v Novosedlicích u Teplic
 title-visible: COWOSEDLICE
 email: radek@cowosedlice.cz
-description: "Coworkingová kancelář Novosedlice / Teplice."
+description: "Jediná coworkingová kancelář v celém Ústeckém kraji. Cowosedlice jsou tu pro ty, kterým nevyhovuje práce z domova anebo pro ty, kteří zkrátka jen chtějí zkusit změnu."
 
 # About section
 history-heading: Trocha historie
-history-subheading: O coworkingové kanceláři v Teplicích jsme přemýšleli pár let. Ovšem cesta od myšlenky ke skutečné realizaci chvílí trvala :).
+history-subheading: Jsme pravděpodobně jediný funkční coworking v celém ústeckém kraji (11/2016). Což znamená dvě věci - buď jdeme slepou uličkou a skončíme stejně jako ostatní, kteří to tady v sudetech zkoušeli, anebo budeme první, kterým se to povede. No a protože vznikl tento text a Vy ho zrovna teď čtete, tak je asi jasné, které ze zmíněných možností více věříme :).
 history:
 - date: červen 2014
   title: Řempo
   pic: rempo_start
-  descr: První kancelář byla malá, rozbitá ale levná.
+  descr: První společný prostor měl plastová okna a jedno topení. Nic moc, ale nájem odpovídal stavu, tak proč ne.
 
 - date: září 2014
   title: Fungujeme!
   pic: rempo_ready
-  descr: Mini kancelář v areálu Řempa jsme si opravili a začali fungovat.
+  descr: Opravit štuky, vymalovat, nový koberec, komplet elektrika a mohli jsme se stěhovat.
 
 - date: 2015
   title: Rosteme
   pic: nb
-  descr: Časem se k nám pridávají Petr, Honza a Jirka a místo přestává stačit.
+  descr: Časem se k nám pridávají Petr, Honza a Jirka a místo pomalu přestává stačit.
 
 - date: leden 2016
   title: Stěhujeme se.
   pic: stehovani
-  descr: Máme dostatek místa pro nové kolegy a navíc pěkné zázemí.
+  descr: Stěhujeme se do současných Cowosedlic.
 
 - date: červen 2016
   title: Kávovar
   pic: kavovar
-  descr: Pořízení kavalitního kávovaru bylo zlomovým bodem. Pohodlí a produktivita se mnohonásobně zlepšily.
+  descr: Pořízení kávovaru bylo zlomovým bodem. Pohodlí a produktivita se mnohonásobně zlepšily. Za čerstvou kávu děkujeme <a href="http://www.frolikovakava.cz/">Frolíkovi</a>.
 
 - date: srpen 2016
   title: Cowosedlice.cz
@@ -46,7 +46,7 @@ history-cta3: Přidej se!
 
 # Price list
 price-heading: Ceník
-price-subheading: Ať už máte malý nebo velký tarif, vždy budete mít možnost využívat všeho, co se v cowosedlicích nachází.
+price-subheading: Ať už máte malý nebo velký tarif, vždy budete mít možnost využívat všeho, co se v cowosedlicích nachází. Wifi, tiskárna, cowosedlické PC, kuchyňka, lednice, kávovar atd. A stálí členové mají samozřejmě své vlastní vyhrazené pracovní místo.
 price:
 - tariff: 1750Kč měsíčně
   pic: battery-full
@@ -65,7 +65,7 @@ price:
 
 # Team names, titles and social links
 people-heading: Aktivní členové
-people-subheading: I když může pro většinu lidí pojem „práce z domova“ znít jako něco úžasného, ne každému to dlouhodobě vyhovuje. Ať už kvůli chybějícímu kontaktu s jinými lidmi, prolínání pracovního a běžného života nebo třeba kvůli špatnému soustředění, když máte doma manželku na mateřské i s Vaší malou reprodukcí. A proto tu jsou <b>cowosedlice</b> :-).
+people-subheading: I když může pro většinu lidí pojem „práce z domova“ znít jako něco úžasného, ne každému to dlouhodobě vyhovuje. Ať už kvůli chybějícímu kontaktu s jinými lidmi, prolínání pracovního a osobního života nebo třeba kvůli špatnému soustředění, když máte doma manželku na mateřské i s Vaší malou reprodukcí. A pro všechny takové tu jsou <b>cowosedlice</b> :-).
 people:
 - name: Ing. Radek Novák
   pic: 1
@@ -117,6 +117,14 @@ people:
       url: http://nutrilonstore.com/en/
     - title: facebook
       url: https://www.facebook.com/mcapek
+
+- name: Volné místo
+  pic: plus
+  position: Ještě máme 1-2 volná místa pro stálé členy
+  social:
+    - title: email
+      url: radek@cowosedlice.cz
+
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
