@@ -34,7 +34,7 @@ history:
 - date: červen 2016
   title: Kávovar
   pic: kavovar
-  descr: Pořízení kávovaru bylo zlomovým bodem. Pohodlí a produktivita se mnohonásobně zlepšily. Za čerstvou kávu děkujeme <a href="http://www.frolikovakava.cz/">Frolíkovi</a>.
+  descr: Pořízení kávovaru bylo zlomovým bodem. Pohodlí a produktivita se mnohonásobně zlepšily. Za čerstvou kávu děkujeme <a href="http://www.frolikovakava.cz/">Frolíkově pražírně</a>.
 
 - date: srpen 2016
   title: Cowosedlice.cz
@@ -119,11 +119,11 @@ people:
       url: https://www.facebook.com/mcapek
 
 - name: Volné místo
-  pic: plus
+  pic: 999
   position: Ještě máme 1-2 volná místa pro stálé členy
   social:
-    - title: email
-      url: radek@cowosedlice.cz
+    - title: plus
+      url: mailto:radek@cowosedlice.cz
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
