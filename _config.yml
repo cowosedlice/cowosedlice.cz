@@ -48,21 +48,20 @@ history-cta3: Přidej se!
 price-heading: Ceník
 price-subheading: Ať už máte malý nebo velký tarif, vždy budete mít možnost využívat všeho, co se v cowosedlicích nachází. Wifi, tiskárna, cowosedlické PC, kuchyňka, lednice, kávovar atd. A stálí členové mají samozřejmě své vlastní vyhrazené pracovní místo.
 price:
-- tariff: 1750Kč měsíčně
-  pic: battery-full
-  desc-title: Velký tarif
-  desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.
+- tariff: 0 Kč
+  pic: battery-quarter
+  desc-title: Denní členství zdarma
+  desc: Pokud si to u nás chcete vyzkoušet nebo dorazíte jen 1-2x v měsíci, nemusíte platit vůbec nic.
 
 - tariff: 1100Kč měsíčně
   pic: battery-three-quarters
   desc-title: Střední tarif
   desc: Pokrývá 10 pracovních dní od 8:00 do 17:00 a můžete pracovat tam, kde je zrovna volno.
   
-- tariff: 150 za každý den
-  pic: battery-quarter
-  desc-title: Malý tarif
-  desc: Přístup v pracovní době mezi 8:00 a 17:00.
-
+- tariff: 1750Kč měsíčně
+  pic: battery-full
+  desc-title: Velký tarif
+  desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.  
 # Team names, titles and social links
 people-heading: Aktivní členové
 people-subheading: I když může pro většinu lidí pojem „práce z domova“ znít jako něco úžasného, ne každému to dlouhodobě vyhovuje. Ať už kvůli chybějícímu kontaktu s jinými lidmi, prolínání pracovního a osobního života nebo třeba kvůli špatnému soustředění, když máte doma manželku na mateřské i s Vaší malou reprodukcí. A pro všechny takové tu jsou <b>cowosedlice</b> :-).
