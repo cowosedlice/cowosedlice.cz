@@ -48,10 +48,10 @@ history-cta3: Přidej se!
 price-heading: Ceník
 price-subheading: Ať už máte malý nebo velký tarif, vždy budete mít možnost využívat všeho, co se v cowosedlicích nachází. Wifi, tiskárna, cowosedlické PC, kuchyňka, lednice, kávovar atd. A stálí členové mají samozřejmě své vlastní vyhrazené pracovní místo.
 price:
-- tariff: 0 Kč
+- tariff: 150Kč denně Kč
   pic: battery-quarter
-  desc-title: Denní členství zdarma
-  desc: Pokud si to u nás chcete vyzkoušet nebo dorazíte jen 1-2x v měsíci, rádi vás uvidíme.
+  desc-title: Malý tarif
+  desc: Pro nové členy jsou 2 dny zdarma, jinak 150Kč za každý započatý den.
 
 - tariff: 1100Kč měsíčně
   pic: battery-three-quarters
