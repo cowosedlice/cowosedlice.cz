@@ -1,6 +1,6 @@
 ---
 title: Zadní část coworkingu
-subtitle: A Radim s Jirkou v celé své kráse
+subtitle: Návrh i výroba atypických stolů svépomocí
 layout: default
 modal-id: 2
 img: 2.jpg
