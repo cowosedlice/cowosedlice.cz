@@ -1,6 +1,6 @@
 ---
-title: Pohled z přední části
-subtitle: Na fotce je i návštěva z Austrálie, zdravíme @cermakm
+title: Stačí stisknout
+subtitle: Dobrá káva a rychlý internet jsou základem každého coworkingu :)
 layout: default
 modal-id: 3
 img: 3.jpg

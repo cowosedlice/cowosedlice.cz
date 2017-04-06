@@ -1,6 +1,6 @@
 ---
-title: Pohled zvenčí
-subtitle: Vstup do cowosedlic přímo z ulice
+title: Pro chvíli odpočinku
+subtitle: Nejen prací je člověk živ
 layout: default
 modal-id: 5
 img: 5.jpg

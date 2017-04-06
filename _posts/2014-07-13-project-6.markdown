@@ -1,6 +1,6 @@
 ---
-title: Ajťácký koutek
-subtitle: Stačí zapnout stroje a nepotřebujeme topení :)
+title: Pohled zvenčí
+subtitle: Vstup do cowosedlic přímo z ulice
 layout: default
 modal-id: 6
 img: 6.jpg

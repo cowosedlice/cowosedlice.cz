@@ -1,6 +1,6 @@
 ---
-title: Relax
-subtitle: Zatím provizorní místo na chvíli oddechu
+title: Skoro jako doma
+subtitle: Plně vybavená kuchyň
 layout: default
 modal-id: 4
 img: 4.jpg

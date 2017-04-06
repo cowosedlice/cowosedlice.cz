@@ -1,6 +1,6 @@
 ---
-title: Kuchyňka
-subtitle: A náš kávový barista v akci :)
+title: Kdo je to?
+subtitle: Náš nejpilnější cowosedličák :)
 layout: default
 modal-id: 1
 img: 1.jpg
