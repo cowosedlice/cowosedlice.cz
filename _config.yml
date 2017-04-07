@@ -17,15 +17,15 @@ history:
 
 - title: Vlastní místo pro stálé členy
   pic: stul
-  descr: Stálí členové mají své vlastní místo 24/7 :)
+  descr: Stálí členové mají své vlastní místo 24/7 a mohou se tu trochu zahnízdit :).
 
 - title: Káva od Frolíka
   pic: kava
-  descr: Neomezené množství kávy pro každého - stačí vzít hrneček a zmáčknout čudlík.
+  descr: Neomezené množství kávy pro každého - stačí vzít hrneček a zmáčknout čudlík. Je to pohodlné a dost návykové.
 
 - title: Kuchyňský koutek
   pic: kuchyn
-  descr: Kachnu tu sice neupečeme, ale pro béžně potřeby ajťáků kuchyň plně dostačuje.
+  descr: Kachnu tu sice neupečeme, ale pro béžně potřeby ajťáků kuchyň plně dostačuje - lednice, mikrovlnka, rychlovarná konvice atd.
 
 - title: Kam na oběd?
   pic: pizza
@@ -33,7 +33,7 @@ history:
 
 - title: Možnosti dopravy
   pic: doprava
-  descr: Autem lze zaparkovat hned u coworkingu, pro ty s lítačkou do Novosedlic jezdí autobusy č. 491, 492, 494, 482, 481, 802 a pokud přijedete na kole, máme suchý uzamykatelný průjezd :).
+  descr: Autem lze zaparkovat hned u coworkingu, pro ty s lítačkou jezdí autobusy č. 491, 492, 494, 482, 481, 802 a pokud přijedete na kole, máme suchý uzamykatelný průjezd a budeme mít i sprchu :).
 
 # Price list
 price-heading: Ceník
@@ -55,7 +55,7 @@ price:
   desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.  
 # Team names, titles and social links
 people-heading: Aktivní členové
-people-subheading: I když může pro většinu lidí pojem „práce z domova“ znít jako něco úžasného, ne každému to dlouhodobě vyhovuje. Ať už kvůli chybějícímu kontaktu s jinými lidmi, prolínání pracovního a osobního života nebo třeba kvůli špatnému soustředění, když máte doma manželku na mateřské i s Vaší malou reprodukcí. A pro všechny takové tu jsou <b>cowosedlice</b> :-).
+people-subheading: I když je nás pět, reálně se tu v 90% potkáme 2 až 3. Tedy nepatříme mezi největší coworkingy, ale těsno tady není a budeme samozřejmě rádi za každého nového člena.
 people:
 - name: Radek Novák
   pic: 1
