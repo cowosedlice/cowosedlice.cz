@@ -1,6 +1,6 @@
 ---
-title: Stačí stisknout
-subtitle: Dobrá káva a rychlý internet jsou základem každého coworkingu :)
+title: Frolíkova káva
+subtitle: Poctivá káva není ta od Jihlavanky, ale od Frolíka :)
 layout: default
 modal-id: 3
 img: 3.jpg

@@ -8,41 +8,32 @@ email: radek@cowosedlice.cz
 description: "Jediná coworkingová kancelář v celém Ústeckém kraji. Cowosedlice jsou tu pro ty, kterým nevyhovuje práce z domova anebo pro ty, kteří zkrátka jen chtějí zkusit změnu."
 
 # About section
-history-heading: Trocha historie
-history-subheading: Jsme pravděpodobně jediný funkční coworking v celém ústeckém kraji (11/2016). Což znamená dvě věci - buď jdeme slepou uličkou a skončíme stejně jako ostatní, kteří to tady v sudetech zkoušeli, anebo budeme první, kterým se to povede. No a protože vznikl tento text a Vy ho zrovna teď čtete, tak je asi jasné, které ze zmíněných možností více věříme :).
+history-heading: Cowosedlické vybavení
+history-subheading: Do konce roku 2017 bychom rádi rozšířili kancelář o 3D tiskárnu, router Turris Omnia a když zbyde pár $$ navíc, tak postavíme i venkovní terasu. Ale v pár lidech to nezvládneme, tak přijďte a pomozte nám s tím :).
 history:
-- date: červen 2014
-  title: Řempoo
-  pic: rempo_start
-  descr: První společný prostor měl plastová okna a jedno topení. Nic moc, ale nájem odpovídal stavu, tak proč ne.
+- title: Připojení k internetu
+  pic: internet
+  descr: Přípojka do sítě jede na vyhrazených linkách od dvou na sobě nezávislých poskytovatelů v rychlostech 50/25 a 30/10. Na Novosedlice dobrý.
 
-- date: září 2014
-  title: Fungujeme!
-  pic: rempo_ready
-  descr: Opravit štuky, vymalovat, nový koberec, komplet elektrika a mohli jsme se stěhovat.
+- title: Vlastní místo pro stálé členy
+  pic: stul
+  descr: Stálí členové mají své vlastní místo 24/7 :)
 
-- date: 2015
-  title: Rosteme
-  pic: nb
-  descr: Časem se k nám pridávají Petr, Honza a Jirka a místo pomalu přestává stačit.
+- title: Káva od Frolíka
+  pic: kava
+  descr: Neomezené množství kávy pro každého - stačí vzít hrneček a zmáčknout čudlík.
 
-- date: leden 2016
-  title: Stěhujeme se.
-  pic: stehovani
-  descr: Stěhujeme se do současných Cowosedlic.
+- title: Kuchyňský koutek
+  pic: kuchyn
+  descr: Kachnu tu sice neupečeme, ale pro béžně potřeby ajťáků kuchyň plně dostačuje.
 
-- date: červen 2016
-  title: Kávovar
-  pic: kavovar
-  descr: Pořízení kávovaru bylo zlomovým bodem. Pohodlí a produktivita se mnohonásobně zlepšily. Za čerstvou kávu děkujeme <a href="http://www.frolikovakava.cz/">Frolíkově pražírně</a>.
+- title: Kam na oběd?
+  pic: pizza
+  descr: Hned vedle jsou hotovky od Plemanářů, 8 minut chůze vyhlášená Pizzeria Sluis a jako nouzovka tu funguje i DámeJídlo. 
 
-- date: srpen 2016
-  title: Cowosedlice.cz
-  pic: web
-  descr: Oficiální otevření na nové adrese.
-history-cta1: Napiš
-history-cta2: Přijď
-history-cta3: Přidej se!
+- title: Možnosti dopravy
+  pic: doprava
+  descr: Autem lze zaparkovat hned u coworkingu, pro ty s lítačkou do Novosedlic jezdí autobusy č. 491, 492, 494, 482, 481, 802 a pokud přijedete na kole, máme suchý uzamykatelný průjezd :).
 
 # Price list
 price-heading: Ceník
