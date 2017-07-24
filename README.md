@@ -1,31 +1,31 @@
-Agency Jekyll theme
+Cowosedlice.cz
 ====================
 
-Agency theme based on [Agency bootstrap theme ](http://startbootstrap.com/templates/agency/)
-(We didn't forked it because pull request forms are pretty messy on forks.)
+# Builds
+
+`dev`: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=dev)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
+`gh-pages`: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=gh-pages)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
+
 
 # How to use
 
-###Portfolio 
+## Get Jekyll runnig locally (Ubuntu 16.04)
+```
+sudo apt-get install ruby-dev gcc make libghc-zlib-dev
+gem install rubygems-update
+gem install jekyll bundler
+```
+Or read https://jekyllrb.com/ if you have more questions.
 
-Portfolio projects are in '/_posts'
+## Stay up to date
+`bundle install` - Install requirements. Note that these can be changed by pulling new code.
 
-Images are in '/img/portfolio'
+## Develop locally
+```
+bundle exec jekyll serve
+```
 
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
-
-
-# Demo
-
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
-
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+## Develop locally
+```
+bundle exec jekyll build
+```
