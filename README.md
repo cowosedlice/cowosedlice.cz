@@ -3,15 +3,14 @@ Cowosedlice.cz
 
 # Builds
 
-`dev`: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=dev)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
-`gh-pages`: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=gh-pages)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
+ * `dev`: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=dev)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
+* `gh-pages`: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=gh-pages)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
 
-
-# How to use
+# How to
 
 ## Get Jekyll runnig locally (Ubuntu 16.04)
 ```
-sudo apt-get install ruby-dev gcc make libghc-zlib-dev
+sudo apt install ruby-dev gcc make libghc-zlib-dev
 gem install rubygems-update
 gem install jekyll bundler
 ```
