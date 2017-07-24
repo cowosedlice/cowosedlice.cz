@@ -1,4 +1,7 @@
 language: ruby
 rvm:
   2.3.3
-script: "bundle exec jekyll build"
+
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer --assume-extension --url-ignore "#" ./_site
