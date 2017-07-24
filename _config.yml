@@ -29,7 +29,7 @@ history:
 
 - title: Kam na oběd?
   pic: pizza
-  descr: Hned vedle jsou hotovky od Plemanářů, 8 minut chůze vyhlášená Pizzeria Sluis a jako nouzovka tu funguje i DámeJídlo. 
+  descr: Hned vedle jsou hotovky od Plemanářů, 8 minut chůze vyhlášená Pizzeria Sluis a jako nouzovka tu funguje i DámeJídlo.
 
 - title: Možnosti dopravy
   pic: doprava
@@ -48,11 +48,11 @@ price:
   pic: battery-three-quarters
   desc-title: Střední tarif
   desc: Pokrývá 10 pracovních dní od 8:00 do 17:00 a můžete pracovat tam, kde je zrovna volno.
-  
+
 - tariff: 1750Kč měsíčně
   pic: battery-full
   desc-title: Velký tarif
-  desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.  
+  desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.
 # Team names, titles and social links
 people-heading: Aktivní členové
 people-subheading: Byli jsme dva a teď je nás pět, reálně se ale v Novosedlicích potkáme 2 až 3. Těsno nám zatím není a budeme samozřejmě rádi za každého nového člena.
@@ -95,7 +95,7 @@ people:
     - title: link
       url: http://www.jirismid.cz
     - title: link
-      url: http://www.prohlidka-virtualne.cz/     
+      url: http://www.prohlidka-virtualne.cz/
     - title: code-fork
       url: https://github.com/jirismid
 
@@ -110,7 +110,7 @@ people:
 
 - name: Volné místo
   pic: 999
-  position: Ještě máme pár volných míst. 
+  position: Ještě máme pár volných míst.
   social:
     - title: plus
       url: mailto:radek@cowosedlice.cz
