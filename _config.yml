@@ -39,17 +39,17 @@ history:
 price-heading: Ceník
 price-subheading: Ať už máte malý nebo velký tarif, vždy budete mít možnost využívat všeho, co se v cowosedlicích nachází. Wifi, tiskárna, cowosedlické PC, kuchyňka, lednice, kávovar atd. A stálí členové mají samozřejmě své vlastní vyhrazené pracovní místo.
 price:
-- tariff: 150Kč denně Kč
+- tariff: 210Kč denně Kč
   pic: battery-quarter
   desc-title: Malý tarif
   desc: Pro nové členy jsou 2 dny zdarma, jinak 150Kč za každý započatý den.
 
-- tariff: 1100Kč měsíčně
+- tariff: 1540Kč měsíčně
   pic: battery-three-quarters
   desc-title: Střední tarif
   desc: Pokrývá 10 pracovních dní od 8:00 do 17:00 a můžete pracovat tam, kde je zrovna volno.
   
-- tariff: 1750Kč měsíčně
+- tariff: 2450Kč měsíčně
   pic: battery-full
   desc-title: Velký tarif
   desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.  
