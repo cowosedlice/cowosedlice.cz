@@ -48,7 +48,7 @@ price:
   pic: battery-three-quarters
   desc-title: Střední tarif
   desc: Pokrývá 10 pracovních dní od 8:00 do 17:00 a můžete pracovat tam, kde je zrovna volno.
-  
+
 - tariff: 2450Kč měsíčně
   pic: battery-full
   desc-title: Velký tarif
