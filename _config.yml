@@ -42,7 +42,7 @@ price:
 - tariff: 210Kč denně
   pic: battery-quarter
   desc-title: Malý tarif
-  desc: Pro nové členy jsou 2 dny zdarma, jinak 150Kč za každý započatý den.
+  desc: Pro nové členy jsou 2 dny zdarma, jinak 210Kč za každý započatý den.
 
 - tariff: 1540Kč měsíčně
   pic: battery-three-quarters
@@ -55,7 +55,7 @@ price:
   desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.  
 # Team names, titles and social links
 people-heading: Aktivní členové
-people-subheading: Byli jsme dva a teď je nás pět, reálně se ale v Novosedlicích potkáme 2 až 3. Těsno nám zatím není a budeme samozřejmě rádi za každého nového člena.
+people-subheading: Reálně se v Novosedlicích potkáme 2 až 3. Těsno nám zatím není a budeme samozřejmě rádi za každého nového člena.
 people:
 - name: Radek Novák
   pic: 1
@@ -88,25 +88,6 @@ people:
     - title: code-fork
       url: https://github.com/honzapara
 
-- name: Jiří Šmíd
-  pic: 4
-  position: Tvorba webových stránek, grafiky, html šablon, SEO optimalizace a certifikovaný Google Street View fotograf zajišťující virtuální prohlídky.
-  social:
-    - title: link
-      url: http://www.jirismid.cz
-    - title: link
-      url: http://www.prohlidka-virtualne.cz/     
-    - title: code-fork
-      url: https://github.com/jirismid
-
-- name: Martin Čapek
-  pic: 5
-  position: Majitel e-shopu s dětskou výživou nutrilonstore.com.
-  social:
-    - title: link
-      url: http://nutrilonstore.com/en/
-    - title: facebook
-      url: https://www.facebook.com/mcapek
 
 - name: Volné místo
   pic: 999
