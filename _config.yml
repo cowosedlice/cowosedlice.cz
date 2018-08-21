@@ -97,6 +97,22 @@ people:
       url: mailto:radek@cowosedlice.cz
 
 
+- name: Volné místo
+  pic: 999
+  position: Ještě máme pár volných míst. 
+  social:
+    - title: plus
+      url: mailto:radek@cowosedlice.cz
+
+
+- name: Volné místo
+  pic: 999
+  position: Ještě máme pár volných míst. 
+  social:
+    - title: plus
+      url: mailto:radek@cowosedlice.cz
+
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: link
