@@ -89,12 +89,12 @@ people:
       url: https://github.com/honzapara
 
 
-- name: Volné místo
-  pic: 999
-  position: Ještě máme pár volných míst. 
+- name: Jan Nedvěd
+  pic: 4
+  position: Projektant ocelových konstrukcí na volné noze.
   social:
-    - title: plus
-      url: mailto:radek@cowosedlice.cz
+    - title: facebook
+      url: https://www.facebook.com/johny.nedved
 
 
 - name: Volné místo
