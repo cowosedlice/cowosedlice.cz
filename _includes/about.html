@@ -13,7 +13,7 @@
                         {% for entry in site.history %}
                             <li class="{% cycle 'timeline-normal', 'timeline-inverted' %}">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/{{ entry.pic }}.jpg" alt="">
+                                    <img class="img-circle img-responsive" src="/img/about/{{ entry.pic }}.jpg" alt="{{ entry.title }}">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">

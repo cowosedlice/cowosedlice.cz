@@ -29,7 +29,7 @@ history:
 
 - title: Kam na oběd?
   pic: pizza
-  descr: Hned vedle jsou hotovky od Plemanářů, 8 minut chůze vyhlášená Pizzeria Sluis a jako nouzovka tu funguje i DámeJídlo. 
+  descr: Hned vedle jsou hotovky od Plemanářů, 8 minut chůze vyhlášená Pizzeria Sluis a jako nouzovka tu funguje i DámeJídlo.
 
 - title: Možnosti dopravy
   pic: doprava
@@ -52,7 +52,7 @@ price:
 - tariff: 2450Kč měsíčně
   pic: battery-full
   desc-title: Velký tarif
-  desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.  
+  desc: Přístup 24/7 a možnost zřízení vlastního pracovního místa.
 # Team names, titles and social links
 people-heading: Aktivní členové
 people-subheading: Reálně se v Novosedlicích potkáme 2 až 3. Těsno nám zatím není a budeme samozřejmě rádi za každého nového člena.
@@ -64,7 +64,7 @@ people:
     - title: gamepad
       url: http://www.webgames.cz/kontakt
     - title: link
-      url: http://www.lptube.cz
+      url: https://www.lptube.cz
     - title: facebook
       url: https://www.facebook.com/radek.novak.75
 
@@ -107,7 +107,7 @@ people:
 
 - name: Volné místo
   pic: 999
-  position: Ještě máme pár volných míst. 
+  position: Ještě máme pár volných míst.
   social:
     - title: plus
       url: mailto:radek@cowosedlice.cz
