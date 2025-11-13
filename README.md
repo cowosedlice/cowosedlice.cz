@@ -1,11 +1,6 @@
 Cowosedlice.cz
 ====================
 
-# Builds
-
- * `dev`: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=dev)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
-* `gh-pages`: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=gh-pages)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
-
 # How to
 
 ## Get Jekyll runnig locally (Ubuntu 16.04)
