@@ -1,9 +1,0 @@
-language: ruby
-rvm:
-  - 3.3.6
-
-cache: bundler
-
-script:
-  - bundle exec jekyll build
-  - bundle exec htmlproofer --assume-extension --url-ignore "#" ./_site
