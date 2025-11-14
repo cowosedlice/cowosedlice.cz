@@ -48,15 +48,17 @@ The website has been running for 3+ years (as of June 2019) without subsidies, f
 cowosedlice.cz/
 ├── _config.yml              # Jekyll configuration and site content
 ├── _layouts/
-│   └── default.html         # Main layout template
+│   ├── default.html         # Main layout template
+│   └── style.css            # Additional layout styles
 ├── _includes/               # Reusable HTML components
 │   ├── header.html          # Navigation and hero section
 │   ├── team.html            # Active members section
 │   ├── portfolio_grid.html  # Photo gallery
 │   ├── about.html           # Equipment/facilities section
+│   ├── services.html        # Services section
 │   ├── map.html             # Location map
 │   ├── price.html           # Pricing table
-│   ├── contact.html         # Contact form
+│   ├── contact.html         # Contact information
 │   ├── footer.html          # Footer with social links
 │   ├── modals.html          # Modal dialogs
 │   ├── js.html              # JavaScript includes
@@ -65,6 +67,15 @@ cowosedlice.cz/
 │       ├── agency.css       # Custom styles
 │       ├── bootstrap.min.css
 │       └── map.css
+├── _data/                   # Data files
+│   └── template.yml         # Template data
+├── _plugins/                # Jekyll plugins
+│   └── hex_to_rgb.rb        # Color conversion plugin
+├── _posts/                  # Blog posts (used for portfolio/gallery)
+│   └── 2014-07-*.markdown   # Portfolio item posts
+├── .github/
+│   └── workflows/
+│       └── jekyll-deploy.yml  # GitHub Actions deployment workflow
 ├── img/                     # Images
 │   ├── about/               # Facility images
 │   ├── team/                # Member photos
@@ -78,13 +89,17 @@ cowosedlice.cz/
 │   ├── index.html
 │   ├── cowosedlice.html
 │   └── pano2vr_player.js
+├── .ruby-version            # Ruby version specification (3.3.6)
 ├── index.html               # Home page
 ├── style.css                # Main stylesheet
 ├── feed.xml                 # RSS feed
 ├── favicon.ico              # Site favicon
 ├── CNAME                    # Custom domain configuration
+├── netlify.toml             # Netlify configuration
+├── NETLIFY_SETUP.md         # Netlify setup instructions
 ├── Gemfile                  # Ruby dependencies
 ├── Gemfile.lock             # Locked dependency versions
+├── CLAUDE.md                # AI assistant project documentation
 └── README.md                # Development instructions
 ```
 
@@ -106,11 +121,9 @@ Located in `_includes/header.html`
 
 ### 3. Team Section (`_includes/team.html`)
 Active members with profiles:
-- Radek Novák (webgames.cz - PHP, Nette, JavaScript, MySQL, SEO)
-- Radim Klaška (Drupal developer for Morpht Pty. Ltd.)
-- Honza Pára (Drupal developer, site builder)
+- Radim Klaška (Drupal developer for Morpht Pty. Ltd. and Drupal.cz)
 - Jan Nedvěd (Steel construction designer)
-- Available slots (showing open positions)
+- Multiple "Volné místo" (Available slots) showing open positions
 
 ### 4. Photo Gallery (`_includes/portfolio_grid.html`)
 Visual showcase of the coworking space with thumbnails and full-size images.
@@ -137,9 +150,11 @@ Three pricing tiers:
 All plans include: WiFi, printer, PC, kitchen, fridge, coffee maker, etc.
 
 ### 8. Contact Section (`_includes/contact.html`)
-Contact form and information:
-- Email: radek@cowosedlice.cz
-- Social media links (Facebook, GitHub)
+Contact information:
+- Phone: Radim Klaška at +420 605 271 780
+- Physical address: Míru 218, Novosedlice, 417 31
+- Email: radek@cowosedlice.cz (configured in `_config.yml`)
+- Social media links (Facebook, GitHub) in footer
 
 ### 9. Footer (`_includes/footer.html`)
 Social media links and copyright information.
@@ -160,6 +175,16 @@ price: # Pricing tiers
 people: # Team members
 social: # Social media links
 address: # Physical address
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude:
+  - CLAUDE.md  # Exclude this documentation from builds
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
 ```
 
 ## Development Setup
@@ -198,12 +223,27 @@ Generated files will be in the `_site/` directory.
 
 ## Deployment
 
-The site uses GitHub Pages for automatic deployment:
-- **Production branch**: `gh-pages`
-- **Development branch**: `dev`
-- **Travis CI**: Automated builds configured for both branches
+### GitHub Pages (Primary)
+The site uses **GitHub Actions** for automatic deployment to GitHub Pages:
+- **Main branch**: Deployments are triggered on pushes to `main`
+- **Pull Requests**: Builds are tested on PRs to `main` (but not deployed)
+- **Workflow file**: `.github/workflows/jekyll-deploy.yml`
+- **Ruby version**: Specified in `.ruby-version` file (currently 3.3.6)
 
-Push to `gh-pages` branch to deploy to production.
+The deployment workflow:
+1. Checks out the repository
+2. Sets up Ruby using the version from `.ruby-version`
+3. Installs dependencies with bundler (with caching)
+4. Builds the Jekyll site
+5. Uploads and deploys to GitHub Pages
+
+Manual deployment can be triggered from the GitHub Actions tab.
+
+### Netlify (Alternative)
+The project also includes Netlify configuration:
+- **Configuration file**: `netlify.toml`
+- **Setup guide**: `NETLIFY_SETUP.md`
+- Can be used as an alternative hosting platform
 
 ## Special Features
 
@@ -259,22 +299,57 @@ history:
 ```
 
 ### Adding Photos to Gallery
-1. Add thumbnail image to `img/photos/X-thumbnail.jpg`
-2. Add full-size image to `img/photos/X.jpg`
-3. Update portfolio data in Jekyll front matter or includes
+The photo gallery uses Jekyll posts in the `_posts/` directory:
+1. Add thumbnail image to `img/portfolio/X-thumbnail.jpg`
+2. Add full-size image to `img/portfolio/X.jpg`
+3. Create a new post file in `_posts/` with format `YYYY-MM-DD-project-X.markdown`:
+```markdown
+---
+title: Photo Title
+subtitle: Photo Description
+layout: default
+modal-id: X
+img: X.jpg
+thumbnail: X-thumbnail.jpg
+---
+```
 
-## Continuous Integration
+## Continuous Integration & Deployment
 
-Build status badges in README.md:
-- Development branch: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=dev)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
-- Production branch: [![Build Status](https://travis-ci.org/cowosedlice/cowosedlice.cz.svg?branch=gh-pages)](https://travis-ci.org/cowosedlice/cowosedlice.cz)
+The project uses **GitHub Actions** for CI/CD:
+
+### Workflow Configuration
+- **Workflow file**: `.github/workflows/jekyll-deploy.yml`
+- **Triggers**:
+  - Push to `main` branch (builds and deploys)
+  - Pull requests to `main` (builds only for testing)
+  - Manual workflow dispatch
+- **Ruby version**: Managed via `.ruby-version` file (3.3.6)
+- **Deployment target**: GitHub Pages
+
+### Build Process
+1. Checkout repository
+2. Setup Ruby environment with bundler caching
+3. Build Jekyll site with production environment settings
+4. Upload build artifacts (on push to main)
+5. Deploy to GitHub Pages (on push to main only)
+
+### Gemfile Dependencies
+```ruby
+gem 'github-pages'  # GitHub Pages compatible Jekyll
+gem 'html-proofer'  # HTML validation tool
+```
 
 ## Key Files Reference
 
 ### Configuration
 - `_config.yml` - All site settings and content data
-- `Gemfile` - Ruby gem dependencies
+- `.ruby-version` - Ruby version specification (3.3.6)
+- `Gemfile` - Ruby gem dependencies (github-pages, html-proofer)
+- `Gemfile.lock` - Locked dependency versions
 - `CNAME` - Custom domain configuration
+- `netlify.toml` - Netlify deployment configuration
+- `.github/workflows/jekyll-deploy.yml` - GitHub Actions workflow
 
 ### Templates
 - `_layouts/default.html` - Main page template
@@ -291,6 +366,11 @@ Build status badges in README.md:
 - `js/cbpAnimatedHeader.js` - Animated header functionality
 - `js/map.js` - Google Maps configuration
 
+### Data and Plugins
+- `_data/template.yml` - Template data for Jekyll
+- `_plugins/hex_to_rgb.rb` - Custom Jekyll plugin for color conversion
+- `_posts/` - Portfolio/gallery posts (markdown files with front matter)
+
 ## Browser Support
 
 The site uses Bootstrap 3.x and jQuery 1.x, supporting:
@@ -301,9 +381,11 @@ The site uses Bootstrap 3.x and jQuery 1.x, supporting:
 ## Contact & Social Media
 
 - **Website**: http://www.cowosedlice.cz/
+- **Phone**: Radim Klaška at +420 605 271 780
+- **Email**: radek@cowosedlice.cz
 - **Facebook**: https://www.facebook.com/cowosedlice/
 - **GitHub**: https://github.com/cowosedlice
-- **Email**: radek@cowosedlice.cz
+- **Address**: Míru 218, Novosedlice, 417 31
 
 ## License
 
@@ -312,10 +394,12 @@ See LICENSE file in repository root.
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch from `dev`
+2. Create a feature branch from `main`
 3. Make your changes
 4. Test locally with `bundle exec jekyll serve`
-5. Submit a pull request to the `dev` branch
+5. Submit a pull request to the `main` branch
+6. GitHub Actions will automatically build and test your PR
+7. Once approved and merged, changes will be automatically deployed to GitHub Pages
 
 ## Notes for AI Assistants
 
