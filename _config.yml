@@ -125,4 +125,10 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+exclude:
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
 
