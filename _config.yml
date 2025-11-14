@@ -78,6 +78,22 @@ people:
 
 - name: Volné místo
   pic: 999
+  position: Ještě máme pár volných míst.
+  social:
+    - title: plus
+      url: mailto:radek@cowosedlice.cz
+
+
+- name: Volné místo
+  pic: 999
+  position: Ještě máme pár volných míst.
+  social:
+    - title: plus
+      url: mailto:radek@cowosedlice.cz
+
+
+- name: Volné místo
+  pic: 999
   position: Ještě máme pár volných míst. 
   social:
     - title: plus
