@@ -57,17 +57,6 @@ price:
 people-heading: Aktivní členové
 people-subheading: Reálně se v Novosedlicích potkáme 2 až 3. Těsno nám zatím není a budeme samozřejmě rádi za každého nového člena.
 people:
-- name: Radek Novák
-  pic: 1
-  position: Řeší věci související s webgames.cz - tvorba obsahu, programování (php, nette, javascript, mysql), seo, analytika, prodej reklamy atd.
-  social:
-    - title: gamepad
-      url: http://www.webgames.cz/kontakt
-    - title: link
-      url: https://www.lptube.cz
-    - title: facebook
-      url: https://www.facebook.com/radek.novak.75
-
 - name: Radim Klaška
   pic: 2
   position: Drupal vývojář pro australský Morpht Pty. Ltd. a pro český Drupal.cz + fanda do všeho, co má jedničky a nuly.
@@ -79,22 +68,28 @@ people:
     - title: code-fork
       url: https://github.com/radimklaska
 
-- name: Honza Pára
-  pic: 3
-  position: Drupalista na volné noze, kodér šablon, site builder, barista samouk, motorkář a herec teplického divadla.
-  social:
-    - title: tint
-      url: https://www.drupal.org/u/honzapara
-    - title: code-fork
-      url: https://github.com/honzapara
-
-
 - name: Jan Nedvěd
   pic: 4
   position: Projektant ocelových konstrukcí na volné noze.
   social:
     - title: facebook
       url: https://www.facebook.com/johny.nedved
+
+
+- name: Volné místo
+  pic: 999
+  position: Ještě máme pár volných míst.
+  social:
+    - title: plus
+      url: mailto:radek@cowosedlice.cz
+
+
+- name: Volné místo
+  pic: 999
+  position: Ještě máme pár volných míst.
+  social:
+    - title: plus
+      url: mailto:radek@cowosedlice.cz
 
 
 - name: Volné místo
