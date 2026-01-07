@@ -153,7 +153,7 @@ All plans include: WiFi, printer, PC, kitchen, fridge, coffee maker, etc.
 Contact information:
 - Phone: Radim Klaška at +420 605 271 780
 - Physical address: Míru 218, Novosedlice, 417 31
-- Email: radek@cowosedlice.cz (configured in `_config.yml`)
+- Email: radim@cowosedlice.cz (configured in `_config.yml`)
 - Social media links (Facebook, GitHub) in footer
 
 ### 9. Footer (`_includes/footer.html`)
@@ -166,7 +166,7 @@ The `_config.yml` file contains all site configuration and content:
 ```yaml
 url: http://www.cowosedlice.cz
 title: Cowosedlice.cz - sdílená kancelář v Novosedlicích u Teplic
-email: radek@cowosedlice.cz
+email: radim@cowosedlice.cz
 description: "Cowosedlice jsou tu pro ty, kterým nevyhovuje práce z domova..."
 
 # Content sections are configured with YAML data structures
@@ -382,7 +382,7 @@ The site uses Bootstrap 3.x and jQuery 1.x, supporting:
 
 - **Website**: http://www.cowosedlice.cz/
 - **Phone**: Radim Klaška at +420 605 271 780
-- **Email**: radek@cowosedlice.cz
+- **Email**: radim@cowosedlice.cz
 - **Facebook**: https://www.facebook.com/cowosedlice/
 - **GitHub**: https://github.com/cowosedlice
 - **Address**: Míru 218, Novosedlice, 417 31

@@ -17,9 +17,15 @@
                         <ul class="list-inline social-buttons">
                             {% for network in member.social %}
                             <li>
+                                {% if network.url == "contact" %}
+                                <a href="mailto:{{ site.email }}">
+                                    <i class="fa fa-{{ network.title }}"></i>
+                                </a>
+                                {% else %}
                                 <a href="{{ network.url }}">
                                     <i class="fa fa-{{ network.title }}"></i>
                                 </a>
+                                {% endif %}
                             </li>
                             {% endfor %}
 
