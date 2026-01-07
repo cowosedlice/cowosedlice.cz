@@ -81,7 +81,7 @@ people:
   position: Ještě máme pár volných míst.
   social:
     - title: plus
-      url: mailto:radek@cowosedlice.cz
+      url: contact
 
 
 - name: Volné místo
@@ -89,15 +89,7 @@ people:
   position: Ještě máme pár volných míst.
   social:
     - title: plus
-      url: mailto:radek@cowosedlice.cz
-
-
-- name: Volné místo
-  pic: 999
-  position: Ještě máme pár volných míst. 
-  social:
-    - title: plus
-      url: mailto:radek@cowosedlice.cz
+      url: contact
 
 
 - name: Volné místo
@@ -105,7 +97,15 @@ people:
   position: Ještě máme pár volných míst.
   social:
     - title: plus
-      url: mailto:radek@cowosedlice.cz
+      url: contact
+
+
+- name: Volné místo
+  pic: 999
+  position: Ještě máme pár volných míst.
+  social:
+    - title: plus
+      url: contact
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
