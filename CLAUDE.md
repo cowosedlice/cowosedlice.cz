@@ -143,9 +143,9 @@ Interactive Google Maps integration showing location:
 
 ### 7. Pricing Section (`_includes/price.html`)
 Three pricing tiers:
-- **Daily rate**: 210 Kč per day (2 free trial days for new members)
-- **Medium plan**: 1540 Kč/month (10 working days, 8:00-17:00, flexible seating)
-- **Large plan**: 2450 Kč/month (24/7 access, dedicated workspace)
+- **Daily rate**: 300 Kč per day (2 free trial days for new members)
+- **Medium plan**: 2000 Kč/month (10 working days, 8:00-17:00, flexible seating)
+- **Large plan**: 3500 Kč/month (24/7 access, dedicated workspace)
 
 All plans include: WiFi, printer, PC, kitchen, fridge, coffee maker, etc.
 
