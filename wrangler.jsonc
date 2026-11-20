@@ -1,0 +1,35 @@
+// cowosedlice.cz: an assets-only Worker serving the Jekyll build (_site/). No Worker
+// script, so every request is a free static-asset request. The cowosedlice.cz zone
+// injects the Cloudflare Web Analytics beacon.
+// Same setup as https://cfsite.klaska.net (repo radimklaska/cfsite).
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cowosedlice-cz",
+  "compatibility_date": "2026-11-15",
+
+  // Production is the custom domains only. Per-PR previews stay on workers.dev,
+  // where Cloudflare adds X-Robots-Tag: noindex automatically.
+  "workers_dev": false,
+  "preview_urls": true,
+
+  // Cloudflare owns these hostnames' DNS records and certificates. Existing DNS
+  // records for them must be deleted first: the deploy does not replace them
+  // (error 100117 "already has externally managed DNS records").
+  // cowosedlice.cz is the site; www.cowosedlice.cz is here only so it is proxied:
+  // a Cloudflare Redirect Rule (zone setting, see README) 301s it to cowosedlice.cz
+  // before the Worker runs.
+  "routes": [
+    { "pattern": "cowosedlice.cz", "custom_domain": true },
+    { "pattern": "www.cowosedlice.cz", "custom_domain": true }
+  ],
+
+  // Workers Previews (`wrangler preview`, one per PR, see deploy.yml).
+  "previews": {},
+
+  "assets": {
+    // Build first: bundle exec jekyll build
+    "directory": "./_site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

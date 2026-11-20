@@ -4,9 +4,9 @@
 
 **Cowosedlice.cz** is a Jekyll-based static website for a coworking space located in Novosedlice near Teplice, Czech Republic. The site serves as the primary online presence for this shared office space, showcasing facilities, pricing, member profiles, and contact information.
 
-**Domain:** www.cowosedlice.cz
+**Domain:** cowosedlice.cz (www.cowosedlice.cz 301s to it)
 **Repository:** github.com/cowosedlice/cowosedlice.cz
-**Technology:** Jekyll static site generator hosted on GitHub Pages
+**Technology:** Jekyll static site generator hosted on Cloudflare (assets-only Worker `cowosedlice-cz`)
 **Language:** Czech (česky)
 
 ## Project Purpose
@@ -23,7 +23,7 @@ The website has been running for 3+ years (as of June 2019) without subsidies, f
 
 ### Core Framework
 - **Jekyll** - Static site generator
-- **GitHub Pages** - Hosting platform
+- **Cloudflare Workers** - Hosting platform (static assets, `wrangler.jsonc`)
 - **Kramdown** - Markdown processor
 
 ### Frontend Stack
@@ -75,7 +75,9 @@ cowosedlice.cz/
 │   └── 2014-07-*.markdown   # Portfolio item posts
 ├── .github/
 │   └── workflows/
-│       └── jekyll-deploy.yml  # GitHub Actions deployment workflow
+│       ├── deploy.yml         # Build, deploy to Cloudflare, PR previews and checks
+│       ├── link-checker.yml   # lychee over the built site
+│       ├── claude.yml, claude-code-review.yml
 ├── img/                     # Images
 │   ├── about/               # Facility images
 │   ├── team/                # Member photos
@@ -94,9 +96,10 @@ cowosedlice.cz/
 ├── style.css                # Main stylesheet
 ├── feed.xml                 # RSS feed
 ├── favicon.ico              # Site favicon
-├── CNAME                    # Custom domain configuration
-├── netlify.toml             # Netlify configuration
-├── NETLIFY_SETUP.md         # Netlify setup instructions
+├── 404.html                 # Not-found page (the home page with a 404 status)
+├── wrangler.jsonc           # Cloudflare Worker config (custom domains, _site/)
+├── package.json, package-lock.json  # wrangler, Playwright, Lighthouse (pinned exactly)
+├── playwright.config.js, tests/     # Visual regression: PR preview vs production
 ├── Gemfile                  # Ruby dependencies
 ├── Gemfile.lock             # Locked dependency versions
 ├── CLAUDE.md                # AI assistant project documentation
@@ -223,27 +226,29 @@ Generated files will be in the `_site/` directory.
 
 ## Deployment
 
-### GitHub Pages (Primary)
-The site uses **GitHub Actions** for automatic deployment to GitHub Pages:
-- **Main branch**: Deployments are triggered on pushes to `main`
-- **Pull Requests**: Builds are tested on PRs to `main` (but not deployed)
-- **Workflow file**: `.github/workflows/jekyll-deploy.yml`
-- **Ruby version**: Specified in `.ruby-version` file (currently 3.3.6)
+Hosted on Cloudflare as an assets-only Worker `cowosedlice-cz` serving the Jekyll build
+(`_site/`). Same setup as https://cfsite.klaska.net (repo radimklaska/cfsite): copy
+improvements from there. `.github/workflows/deploy.yml`:
 
-The deployment workflow:
-1. Checks out the repository
-2. Sets up Ruby using the version from `.ruby-version`
-3. Installs dependencies with bundler (with caching)
-4. Builds the Jekyll site
-5. Uploads and deploys to GitHub Pages
+- **Push to `main`**: `bundle exec jekyll build`, then `npx wrangler deploy` ->
+  https://cowosedlice.cz. A manual "Run workflow" deploys only from `main`.
+- **Pull request**: a Workers Preview `pr-<N>` on workers.dev (noindex), and a new PR
+  comment per deploy (preview, commit, run, QR code, Visual and Lighthouse rows; older
+  ones collapsed). Visual regression compares every page of the preview with production;
+  a PR that changes how a page looks (prices, members) fails it on purpose, and the
+  comment links a page with the differences. Lighthouse scores the home page.
+- **PR closed**: the preview is deleted.
+- Secrets: `CLOUDFLARE_API_TOKEN` (deploy token "cowosedlice.cz GitHub Actions deploy":
+  Workers Scripts Edit + Account Settings Read, Workers Routes Edit + Zone Read on
+  cowosedlice.cz), `CLOUDFLARE_ACCOUNT_ID`, `CLAUDE_CODE_OAUTH_TOKEN`.
+- **www**: `www.cowosedlice.cz` is a custom domain of the same Worker only so that it is
+  proxied; a Cloudflare Redirect Rule on the cowosedlice.cz zone 301s it to
+  `https://cowosedlice.cz/<path>` before the Worker runs. Not in this repo.
+- Analytics: Cloudflare Web Analytics, injected by the zone (no tag in the templates).
+- Local check: `bundle exec jekyll build && npx wrangler dev`.
 
-Manual deployment can be triggered from the GitHub Actions tab.
-
-### Netlify (Alternative)
-The project also includes Netlify configuration:
-- **Configuration file**: `netlify.toml`
-- **Setup guide**: `NETLIFY_SETUP.md`
-- Can be used as an alternative hosting platform
+`.github/workflows/link-checker.yml` runs lychee over the built site on PRs, every
+Monday and by hand.
 
 ## Special Features
 
@@ -316,23 +321,8 @@ thumbnail: X-thumbnail.jpg
 
 ## Continuous Integration & Deployment
 
-The project uses **GitHub Actions** for CI/CD:
-
-### Workflow Configuration
-- **Workflow file**: `.github/workflows/jekyll-deploy.yml`
-- **Triggers**:
-  - Push to `main` branch (builds and deploys)
-  - Pull requests to `main` (builds only for testing)
-  - Manual workflow dispatch
-- **Ruby version**: Managed via `.ruby-version` file (3.3.6)
-- **Deployment target**: GitHub Pages
-
-### Build Process
-1. Checkout repository
-2. Setup Ruby environment with bundler caching
-3. Build Jekyll site with production environment settings
-4. Upload build artifacts (on push to main)
-5. Deploy to GitHub Pages (on push to main only)
+See **Deployment** above (`.github/workflows/deploy.yml`, `link-checker.yml`, and the
+Claude workflows `claude.yml` / `claude-code-review.yml`).
 
 ### Gemfile Dependencies
 ```ruby
@@ -347,9 +337,8 @@ gem 'html-proofer'  # HTML validation tool
 - `.ruby-version` - Ruby version specification (3.3.6)
 - `Gemfile` - Ruby gem dependencies (github-pages, html-proofer)
 - `Gemfile.lock` - Locked dependency versions
-- `CNAME` - Custom domain configuration
-- `netlify.toml` - Netlify deployment configuration
-- `.github/workflows/jekyll-deploy.yml` - GitHub Actions workflow
+- `wrangler.jsonc` - Cloudflare Worker config (custom domains, `_site/`)
+- `.github/workflows/deploy.yml` - build, deploy, PR previews and checks
 
 ### Templates
 - `_layouts/default.html` - Main page template
@@ -399,7 +388,7 @@ See LICENSE file in repository root.
 4. Test locally with `bundle exec jekyll serve`
 5. Submit a pull request to the `main` branch
 6. GitHub Actions will automatically build and test your PR
-7. Once approved and merged, changes will be automatically deployed to GitHub Pages
+7. Once approved and merged, changes will be automatically deployed to https://cowosedlice.cz (Cloudflare)
 
 ## Notes for AI Assistants
 

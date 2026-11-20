@@ -1,0 +1,16 @@
+{
+  "name": "cowosedlice-cz-site-tools",
+  "private": true,
+  "description": "Deploy tooling (wrangler) and PR checks: visual regression of a PR's Cloudflare preview against production, Lighthouse, the preview QR code.",
+  "scripts": {
+    "test:visual": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "lighthouse": "13.6.0",
+    "pixelmatch": "8.0.0",
+    "pngjs": "7.0.0",
+    "qrcode": "1.5.4",
+    "wrangler": "4.160.1"
+  }
+}
