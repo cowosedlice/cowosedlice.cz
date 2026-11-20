@@ -137,6 +137,7 @@ exclude:
   - package.json
   - package-lock.json
   - wrangler.jsonc
+  - www-redirect/
   - playwright.config.js
   - tests/
   - visual-diffs/

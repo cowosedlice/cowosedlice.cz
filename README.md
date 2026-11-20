@@ -29,6 +29,5 @@ bundle exec jekyll build
 Cloudflare Worker `cowosedlice-cz` (`wrangler.jsonc`, workflow `.github/workflows/deploy.yml`):
 every push to `main` deploys https://cowosedlice.cz, and every pull request gets its own
 preview, linked in a PR comment with a QR code, Lighthouse scores and a visual comparison
-with production. `www.cowosedlice.cz` 301s to `cowosedlice.cz` (a Redirect Rule on the
-Cloudflare zone). Same setup as https://cfsite.klaska.net. Details: `CLAUDE.md`, section
+with production. `www.cowosedlice.cz` 301s to `cowosedlice.cz` (the tiny Worker in `www-redirect/`). Same setup as https://cfsite.klaska.net. Details: `CLAUDE.md`, section
 "Deployment".

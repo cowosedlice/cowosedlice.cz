@@ -97,7 +97,8 @@ cowosedlice.cz/
 ├── feed.xml                 # RSS feed
 ├── favicon.ico              # Site favicon
 ├── 404.html                 # Not-found page (the home page with a 404 status)
-├── wrangler.jsonc           # Cloudflare Worker config (custom domains, _site/)
+├── wrangler.jsonc           # Cloudflare Worker config (custom domain, _site/)
+├── www-redirect/            # Tiny Worker: www.cowosedlice.cz -> cowosedlice.cz (301)
 ├── package.json, package-lock.json  # wrangler, Playwright, Lighthouse (pinned exactly)
 ├── playwright.config.js, tests/     # Visual regression: PR preview vs production
 ├── Gemfile                  # Ruby dependencies
@@ -241,9 +242,10 @@ improvements from there. `.github/workflows/deploy.yml`:
 - Secrets: `CLOUDFLARE_API_TOKEN` (deploy token "cowosedlice.cz GitHub Actions deploy":
   Workers Scripts Edit + Account Settings Read, Workers Routes Edit + Zone Read on
   cowosedlice.cz), `CLOUDFLARE_ACCOUNT_ID`, `CLAUDE_CODE_OAUTH_TOKEN`.
-- **www**: `www.cowosedlice.cz` is a custom domain of the same Worker only so that it is
-  proxied; a Cloudflare Redirect Rule on the cowosedlice.cz zone 301s it to
-  `https://cowosedlice.cz/<path>` before the Worker runs. Not in this repo.
+- **www**: `www.cowosedlice.cz` is a second, tiny Worker `cowosedlice-cz-www`
+  (`www-redirect/`, deployed by the same workflow after the site) that 301s to
+  `https://cowosedlice.cz/<path>?<query>`, so the site's Worker stays assets-only.
+  Same as https://cfsite.klaska.net/hosting/#www.
 - Analytics: Cloudflare Web Analytics, injected by the zone (no tag in the templates).
 - Local check: `bundle exec jekyll build && npx wrangler dev`.
 

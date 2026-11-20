@@ -2,8 +2,8 @@ name: Deploy to Cloudflare
 
 # Builds the Jekyll site and deploys _site/ to Cloudflare (assets-only Worker,
 # see wrangler.jsonc). Previews are Cloudflare Workers Previews.
-#   push to main      -> production (cowosedlice.cz; www.cowosedlice.cz 301s to it
-#                        through a Cloudflare Redirect Rule, see README)
+#   push to main      -> production (cowosedlice.cz), plus the Worker in www-redirect/
+#                        that sends www.cowosedlice.cz to it
 #   PR opened/pushed  -> a Preview named pr-<N> on workers.dev, linked in a new PR
 #                        comment (earlier ones are collapsed as outdated); plus
 #                        visual regression of every page against production (job
@@ -106,7 +106,7 @@ jobs:
         run: |
           test -f _site/index.html
           test -f _site/404.html
-          for f in package.json package-lock.json wrangler.jsonc playwright.config.js tests LICENSE CLAUDE.md README.md; do
+          for f in package.json package-lock.json wrangler.jsonc playwright.config.js tests www-redirect LICENSE CLAUDE.md README.md; do
             if [ -e "_site/$f" ]; then echo "::error::_site/$f would be published"; exit 1; fi
           done
 
@@ -135,6 +135,16 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx wrangler deploy
+
+      # www.<host> -> <host>: a second, tiny Worker (www-redirect/), so the site's Worker
+      # stays assets-only. Its custom domain gets its DNS record and certificate on the
+      # first deploy, like the site's. Not previewed: it has nothing to show.
+      - name: Deploy the www redirect
+        if: env.IS_PR != 'true' && env.IS_DEFAULT_BRANCH == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler deploy --config www-redirect/wrangler.jsonc
 
       # Workers Previews (open beta): one Preview per PR, updated on every push. It
       # creates the Worker if it does not exist yet, without deploying any route.

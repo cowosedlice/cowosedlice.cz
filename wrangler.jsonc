@@ -15,13 +15,8 @@
   // Cloudflare owns these hostnames' DNS records and certificates. Existing DNS
   // records for them must be deleted first: the deploy does not replace them
   // (error 100117 "already has externally managed DNS records").
-  // cowosedlice.cz is the site; www.cowosedlice.cz is here only so it is proxied:
-  // a Cloudflare Redirect Rule (zone setting, see README) 301s it to cowosedlice.cz
-  // before the Worker runs.
-  "routes": [
-    { "pattern": "cowosedlice.cz", "custom_domain": true },
-    { "pattern": "www.cowosedlice.cz", "custom_domain": true }
-  ],
+  // www.cowosedlice.cz is a separate tiny Worker (www-redirect/) that 301s to here.
+  "routes": [{ "pattern": "cowosedlice.cz", "custom_domain": true }],
 
   // Workers Previews (`wrangler preview`, one per PR, see deploy.yml).
   "previews": {},
